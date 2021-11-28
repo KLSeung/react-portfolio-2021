@@ -2,8 +2,13 @@ import React from 'react';
 import { Logo, NavbarContainer, NavbarItems, NavbarItem } from './styles.jsx'
 import { Grid } from '@material-ui/core'
 import ResumePath from '../../assets/Resume_Kevin_Lee.pdf'
+import { animateScroll as scroll} from 'react-scroll'
 
 export const Navbar = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  }
+
   return (
     <NavbarContainer>
       <Grid 
@@ -11,7 +16,7 @@ export const Navbar = () => {
         container
       >
         <Grid item>
-          <Logo>Kevin Lee</Logo>
+          <Logo onClick={scrollToTop}>Kevin Lee</Logo>
         </Grid>
         <Grid item>
           <NavbarItems>
