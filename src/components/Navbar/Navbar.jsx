@@ -1,6 +1,7 @@
 import React from 'react';
 import { Logo, NavbarContainer, NavbarItems, NavbarItem } from './styles.jsx'
 import { Grid } from '@material-ui/core'
+import ResumePath from '../../assets/Resume_Kevin_Lee.pdf'
 
 export const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ export const Navbar = () => {
         </Grid>
         <Grid item>
           <NavbarItems>
-            <NavbarItem>
+            <NavbarItem href={ResumePath} target="_blank">
               Resume
             </NavbarItem>
             <NavbarItem href="https://github.com/KLSeung" target="_blank">
