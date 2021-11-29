@@ -23,7 +23,6 @@ export const ProfilePic = styled('img')`
 `
 
 export const IntroButton = styled(Button)({
-  marginTop: '15px'
 })
 
 export const IntroParagraphContainer = styled('div')`
@@ -48,5 +47,6 @@ export const IntroTitle = styled('h1')`
 export const IntroDescription = styled('p')({
   fontSize: '18px',
   lineHeight: '35px',
-  maxWidth: '600px'
+  maxWidth: '600px',
+  paddingBottom: '10px',
 });
