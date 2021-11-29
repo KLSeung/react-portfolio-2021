@@ -52,7 +52,7 @@ export const MyWorks = () => {
         {
           Object.keys(projects).map((project, i) => {
             return (
-              <Grid item xs={4} align="center" key={'project' + i}>
+              <Grid item xs={12} lg={4} md={4} sm={8} align="center" key={'project' + i}>
                 <a href={projects[project].link} target="_blank" rel="noreferrer">
                 <MyWorksImgContainer imgSrc={projects[project].imagePath}>
                   <MyWorksImgOverlay>

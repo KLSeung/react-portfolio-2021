@@ -41,10 +41,19 @@ export const MyWorksImgContainer = styled('div').withConfig({
   border: 1px solid #A9A9A9;
   margin: 30px 0px 10px 0px;
   transition: .5s ease;
-  width: 25vw;
-  height: 15vw;
   backface-visibility: hidden;
   overflow: hidden;
+  width: 80vw;
+  height: 60vw;
+
+  @media (min-width: 1024px) {
+    width: 25vw;
+    height: 15vw;
+  }
+
+  @media (min-width: 425px) and (max-width: 768px) {
+    padding-left: 60px;
+  }
 
   &:hover {
     cursor: pointer;

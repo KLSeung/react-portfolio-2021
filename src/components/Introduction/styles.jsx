@@ -1,4 +1,5 @@
-import { styled, Button } from "@material-ui/core"
+import { Button } from "@material-ui/core"
+import styled from 'styled-components'
 
 export const IntroductionContainer = styled('div')({
   fontFamily:'Montserrat, sans-serif',
@@ -8,29 +9,41 @@ export const IntroductionContainer = styled('div')({
   maxWidth: '1140px',
 });
 
-export const ProfilePic = styled('img')({
-  width: '240px',
-  height: '240px',
-  borderRadius: '50%',
-  marginLeft: '50px',
-  boxShadow: '0px 4px 4px rgb(0 0 0 / 25%)',
-  transform: 'matrix(-1, 0, 0, 1, 0, 0)'
-});
+export const ProfilePic = styled('img')`
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  box-Shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-bottom: 30px;
+
+  @media (min-width: 1024px) {
+    margin-left: 50px;
+  }
+`
 
 export const IntroButton = styled(Button)({
   marginTop: '15px'
 })
 
-export const IntroParagraphContainer = styled('div')({
-  paddingLeft: '70px'
-});
+export const IntroParagraphContainer = styled('div')`
+  padding-left: 40px;
 
-export const IntroTitle = styled('h1')({
-  fontSize: '36px',
-  lineHeight: '49px',
-  fontWeight: 'bold',
-  marginBottom: '30px',
-});
+  @media (min-width: 1024px) {
+    padding-left: 70px;
+  }
+`
+
+export const IntroTitle = styled('h1')`
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  @media (max-width: 375px) {
+    font-size: 31px;
+  }
+`
 
 export const IntroDescription = styled('p')({
   fontSize: '18px',
