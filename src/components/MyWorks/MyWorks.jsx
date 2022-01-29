@@ -6,6 +6,7 @@ import ChatBoxPic from '../../assets/ChatBox.png';
 import RockPaperScissorsPic from '../../assets/Rock_Paper_Scissor.png';
 import TinyAppPic from '../../assets/url_show.png';
 import TodoAppPic from '../../assets/Todo_App.png';
+import ShopppiesNomination from '../../assets/Movie_Nomination.png'
 
 import { MyWorksContainer, MyWorksImgContainer, MyWorksHeader, MyWorksDescription, MyWorksImgOverlay } from './styles'
 import { Element } from 'react-scroll'
@@ -29,6 +30,12 @@ export const MyWorks = () => {
       link: 'https://github.com/KLSeung/tinyapp',
       description: 'Web application built with Node and Express that allows users to shorten long URLs and track views on these URLs',
       title: 'TinyApp'
+    },
+    ShoppiesNomination: {
+      imagePath: ShopppiesNomination,
+      link: 'https://klseung.github.io/movie-nomination/',
+      description: 'Web application to search and nominate your top five movies, created for a Shopify project',
+      title: 'The Shoppies'
     },
     AlarmMe: {
       imagePath: AlarmClockPic,
